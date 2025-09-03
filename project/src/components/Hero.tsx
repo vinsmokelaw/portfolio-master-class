@@ -1,4 +1,5 @@
 import React from 'react';
+import img2 from "../images/img2.jpg"; 
 import { ExternalLink } from 'lucide-react';
 
 const Hero: React.FC = () => {
@@ -12,20 +13,20 @@ const Hero: React.FC = () => {
   return (
     <section id="home" className="min-h-screen flex items-center pt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 flex flex-col justify-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Building Tomorrow's{' '}
+              Hello my name is{' '}
               <span className="bg-gradient-to-r from-purple-400 to-violet-400 bg-clip-text text-transparent">
-                Solutions
+                Tawanda Muchenu
               </span>
-              , One Line of Code at a Time.
             </h1>
             
             <p className="text-lg text-gray-300 leading-relaxed max-w-xl">
-              Hello, I'm a 28-year-old aspiring Full Stack Developer, 
-              self-taught in the dynamic world of programming. My journey 
+              I'm a 21-old aspiring Full Stack Developer, 
+              Currently studying at Uncommon.org. My journey 
               is fueled by a relentless passion for crafting elegant and 
               efficient web applications. I thrive on solving complex 
               problems and transforming innovative ideas into tangible, 
@@ -50,17 +51,16 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Hero Image/Graphic */}
-          <div className="relative">
-            <div className="w-full h-96 bg-gradient-to-br from-gray-700 to-gray-800 rounded-2xl flex items-center justify-center">
-              <div className="w-64 h-64 bg-gradient-to-br from-purple-500/20 to-violet-500/20 rounded-xl flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-violet-400 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                    <span className="text-2xl font-bold">{'</>'}</span>
-                  </div>
-                  <p className="text-sm text-gray-400">Code • Design • Deploy</p>
-                </div>
-              </div>
+          <div className="relative flex justify-center">
+            <div className="relative overflow-hidden rounded-2xl w-full max-h-[300px] sm:max-h-[400px] lg:max-h-[500px] mx-auto">
+              <img
+                src={img2}   
+                alt="Hero"
+                className="w-full h-auto object-contain"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 to-transparent"></div>
             </div>
+
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-8 h-8 bg-purple-400/20 rounded-full animate-pulse"></div>
             <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-violet-400/20 rounded-full animate-pulse delay-500"></div>

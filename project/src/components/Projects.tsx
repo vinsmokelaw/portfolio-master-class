@@ -11,17 +11,18 @@ const Projects: React.FC = () => {
       gradient: 'from-gray-600 to-gray-700'
     },
     {
-      title: 'Credit Score App',
-      description: 'A user-friendly mobile-first application that helps individuals understand and improve their credit health. It provides real-time credit score tracking, personalized recommendations, and a simulator for understanding how different financial decisions impact credit, empowering users towards better financial literacy.',
-      image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['React Native', 'API Integration', 'Charts'],
+      title: "Buildlink Website",
+      description: "A beautiful Building website using React and Tailwind.",
+      image: "/projects/project1.png",
+      tech: ["React", "TailwindCSS", "#"],
       gradient: 'from-yellow-400 to-orange-400'
     },
     {
-      title: 'Dashboard Visualizations',
-      description: 'Interactive dashboards built for business intelligence, transforming raw data into actionable insights. These projects showcase dynamic data filtering, various chart types like line, pie, jobs, and intuitive user interfaces designed for data analysis, marketing, and operational analytics.',
-      image: 'https://images.pexels.com/photos/590045/pexels-photo-590045.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tech: ['D3.js', 'TypeScript', 'Analytics'],
+      title: "Open Chat",
+      description:
+        "A simple chat app",
+      image: "/projects/project2.png",
+      tech: ["React.js", "HTML&CSS", "#"],
       gradient: 'from-blue-500 to-cyan-500'
     }
   ];
@@ -30,7 +31,7 @@ const Projects: React.FC = () => {
     <section id="projects" className="py-20 bg-gray-800/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Key Projects</h2>
+          <h2 className="text-4xl font-bold mb-4">Projects</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-purple-400 to-violet-400 rounded-full mx-auto"></div>
         </div>
 

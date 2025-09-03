@@ -1,12 +1,14 @@
 import React from 'react';
+import img2 from "../images/img2.jpg";
 
 const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-purple-900/30 to-violet-900/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-stretch">
+          
           {/* Content */}
-          <div className="space-y-6">
+          <div className="flex flex-col justify-center space-y-6">
             <h2 className="text-4xl font-bold mb-6">About My Journey</h2>
             <p className="text-lg text-gray-300 leading-relaxed">
               I thrive on challenges, approaching every problem with a 
@@ -22,23 +24,23 @@ const About: React.FC = () => {
             
             <div className="grid grid-cols-2 gap-6 pt-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">50+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">8</div>
                 <p className="text-gray-400">Projects Completed</p>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-purple-400 mb-2">3+</div>
+                <div className="text-3xl font-bold text-purple-400 mb-2">1+</div>
                 <p className="text-gray-400">Years Experience</p>
               </div>
             </div>
           </div>
 
           {/* Professional Image */}
-          <div className="relative">
-            <div className="relative overflow-hidden rounded-2xl">
+          <div className="relative flex justify-center">
+            <div className="relative overflow-hidden rounded-2xl w-full max-h-[300px] sm:max-h-[400px] lg:max-h-[500px] mx-auto">
               <img 
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                src={img2}
                 alt="Professional headshot"
-                className="w-full h-96 object-cover"
+                className="w-full h-auto object-contain" 
               />
               <div className="absolute inset-0 bg-gradient-to-t from-gray-900/50 to-transparent"></div>
             </div>
