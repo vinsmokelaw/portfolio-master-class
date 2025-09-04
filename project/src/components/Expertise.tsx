@@ -6,14 +6,14 @@ const Expertise: React.FC = () => {
     { name: 'Node.js', level: 'Advanced' },
     { name: 'TypeScript', level: 'Advanced' },
     { name: 'Next.js', level: 'Advanced' },
-    { name: 'PostgreSQL', level: 'Intermediate' },
+    // { name: 'PostgreSQL', level: 'Intermediate' },
     { name: 'Supabase', level: 'Advanced' },
     { name: 'Tailwind CSS', level: 'Expert' },
     { name: 'REST APIs', level: 'Advanced' },
     { name: 'GraphQL', level: 'Intermediate' },
     { name: 'Git', level: 'Advanced' },
-    { name: 'Docker', level: 'Intermediate' },
-    { name: 'AWS (S3, Lambda)', level: 'Intermediate' }
+    // { name: 'Docker', level: 'Intermediate' },
+    // { name: 'AWS (S3, Lambda)', level: 'Intermediate' }
   ];
 
   return (
